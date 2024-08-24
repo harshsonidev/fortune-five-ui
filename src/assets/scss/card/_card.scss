@@ -1,0 +1,101 @@
+.card {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-sidebar-bg);
+    overflow: hidden;
+}
+
+.card-with-content {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    border: 1px solid #2C2C2C;
+
+    & .image-block {
+        border-radius: var(--card-border-radius);
+        overflow: hidden;
+        position: relative;
+        height: 174px;
+
+        & .content-block {
+            height: 100%;
+            padding: 18px 21px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & .title-block {
+                text-align: end;
+                font-family: var(--font-tertiary);
+                letter-spacing: 0.05em;
+                text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+
+                & .title {
+                    font-weight: 900;
+                    font-size: 50px;
+                    line-height: 62px;
+                    text-transform: uppercase;
+                }
+
+                & .sub-title {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+
+            }
+
+            & .button-title {
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                gap: 10px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+
+                & .button-text {
+                    cursor: pointer;
+                }
+
+                // & .right-arrow-icon {
+                //     width: 24px;
+                //     height: 24px;
+                // }
+            }
+        }
+
+        & .image {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+
+    & .content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 24px 24px;
+        width: 100%;
+
+        &-title {
+            color: #CFB009;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        &-para {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #808291;
+        }
+    }
+}

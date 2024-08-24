@@ -1,0 +1,8 @@
+.wrapper {
+    display: flex;
+    min-height: calc(100vh - var(--header-height));
+}
+
+.content {
+    width: calc(100% - var(--sidebar-width));
+}

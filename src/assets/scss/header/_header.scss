@@ -1,0 +1,61 @@
+.header {
+    background-color: var(--color-header-bg);
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 23px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        .sidebar-button {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            column-gap: 12px;
+
+            &-controller {
+                cursor: pointer;
+            }
+
+            &-label {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .logo {
+            margin-left: 153px;
+        }
+    }
+
+    &__right {
+        .buttons {
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+            padding: 0;
+
+            .button {
+                font-size: var(--font-size-b2);
+                font-weight: var(--font-weight-bold);
+                padding: 12px 24px;
+                border: none;
+                border-radius: var(--radius);
+                min-width: fit-content;
+
+                &-sign-in {
+                    background-color: transparent;
+                    color: var(--color-grey-alt);
+                }
+
+                &-register {
+                    background-color: var(--color-button-bg);
+                }
+            }
+        }
+    }
+}

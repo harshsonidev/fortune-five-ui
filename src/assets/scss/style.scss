@@ -1,0 +1,29 @@
+/**************************************
+    Default Styles
+***************************************/
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import 'default/variables';
+@import 'default/typography';
+
+
+/**************************************
+Layout Styles
+***************************************/
+@import 'layout/layout';
+@import 'card/card';
+
+/**************************************
+    Header Styles
+***************************************/
+@import 'header/header';
+
+/**************************************
+    Footer Styles
+***************************************/
+@import 'footer/footer';
+
+/**************************************
+    Sidebar Styles
+***************************************/
+@import 'sidebar/sidebar';
